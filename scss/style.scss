@@ -1,6 +1,17 @@
-
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
 @import "../bower_components/normalize-css/normalize.css";
 @import "../bower_components/typeplate-starter-kit/css/typeplate.css";
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+
+    src: url('../node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.eot');
+    src: url('../node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+        url('../node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2') format('woff2'), 
+        url('../node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff') format('woff'), 
+        url('../node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
+        url('../node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
 
 /**
  * BOX-SIZING
@@ -14,6 +25,10 @@
     transition-duration: 0.25s;
     transition-property: opacity, transform, color, background-color, border-color, z-index, background-image;
     transition-timing-function: ease;
+}
+
+*:hover {
+    outline: 1px solid rgba(200,0,0,.15);
 }
 
 /**
@@ -72,4 +87,30 @@ img {
 /**
  * YOUR CODE HERE
  */
+
+.wrapper {
+    padding-top: 50px;
+}
+
+.hero-splash {
+    >* {
+        text-align: center;
+    }
+    h3,h1,p {
+        color: #fff;
+    }
+    background: url(http://lorempixel.com/900/600/nature/1/) 100% 100% no-repeat;
+    background-size: cover;
+}
+
+.services {
+    .big-icon {
+        font-size: 60px;
+    
+    }
+}
+
+
+
+
 
